@@ -20,9 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "node backend/server.js",
-    "client": "npm install && npm run build",
+    "client": "npm run build && npm run server",
     "server": "cd backend && npm install && node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && npm run dev"
   },
   "eslintConfig": {
